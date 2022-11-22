@@ -9,7 +9,7 @@ void main() {
 
     for (int x = 0; x < loops; x++) {
         for (int y = 0; y < loops; y++) {
-            int validePunktzahl = x * 2 + y * 3;
+            int validePunktzahl = x * 2 + y * 3; // Schlüssel ist hier.
 
             if (validePunktzahl > 99) {
                 fails += 1;
