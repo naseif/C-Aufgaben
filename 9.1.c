@@ -11,12 +11,8 @@ void main() {
         for (int y = 0; y < loops; y++) {
             int validePunktzahl = x * 2 + y * 3; // Schlüssel ist hier.
 
-            if (validePunktzahl > 99) {
-                fails += 1;
-                continue;
-            }
-
             anzahlValiderErgebnisse += 1;
+            printf("2 * %d + 3 * %d = %d\n",x, y, validePunktzahl);
         }
     }
 
