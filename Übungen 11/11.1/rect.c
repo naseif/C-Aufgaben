@@ -1,6 +1,10 @@
 #include "rect.h"
 #include <stdio.h>
 
+/*
+    Captures user input 
+*/
+
 double getBreiteUndLaengeRechteck(double *breite, double *laenge) {
         printf("Bitte geben Sie die Breite ein: ");
         scanf("%lf", breite);
@@ -9,14 +13,25 @@ double getBreiteUndLaengeRechteck(double *breite, double *laenge) {
         scanf("%lf", laenge);
 }
 
+/*
+    Berechnet die Fläche eines Rechtecks
+*/
+
 double berechneFlaeche(double a, double b) {
     return a * b;
 }
+
+/*
+    Berechnet den Umfang eines Rechtecks
+*/
 
 double berechneUmfang(double a, double b) {
     return 2 * a + 2 * b;
 }
 
+/*
+    Gibt zurück, ob die Kantenlänge ein Quadrat oder Rechteck ist
+*/
 int istQuadrat(double a, double b) {
     if (a == b) {
         return 1;
