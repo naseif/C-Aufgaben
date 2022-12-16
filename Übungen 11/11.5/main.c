@@ -10,6 +10,7 @@ int main() {
   int *ptrc = &c;
   int *ptr_null = NULL;
 
+  printf("\n=========================\n\n");
   printf("Adresse von a: %p\n", &a);
   printf("Wert von a: %d\n", a);
 
@@ -28,7 +29,11 @@ int main() {
   printf("Wert von ptrc: %p\n", ptrc);
   printf("Wert auf dem ptrc zeigt: %d\n", *ptrc);
   printf("Wert von ptr_null: %p\n", ptr_null);
+  printf("\n=========================\n");
 
+  printf("\nNeue Werte über Pointer zuweisen\n");
+
+  printf("\n=========================\n");
 
   // Neue Werte über Pointer zuweisen
   *ptra = 20;
@@ -44,9 +49,11 @@ int main() {
   b = 40;
   c = 45;
 
-  printf("Wert von a (über Pointer): %d\n", *ptra);
-  printf("Wert von b (über Pointer): %d\n", *ptrb);
-  printf("Wert von c (über Pointer): %d\n", *ptrc);
+  printf("Wert von a (ueber Pointer): %d\n", *ptra);
+  printf("Wert von b (ueber Pointer): %d\n", *ptrb);
+  printf("Wert von c (ueber Pointer): %d\n", *ptrc);
+
+  printf("==============================");
 
   return 0;
 }
